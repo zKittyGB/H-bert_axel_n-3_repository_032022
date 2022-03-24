@@ -3,6 +3,7 @@
 .fa-heart{                      /*bouton like*/
     margin-top: 10px;
     position:absolute;
+    transform: scale(0.948);    /* reduction du scale pour cacher la border noir*/
 }
 
     .coeur__2{
@@ -17,8 +18,12 @@
             /* transition d'apparition du coeur coloré*/
             &:hover{
                 transition: opacity 2s;
+                transform: scale(1);
                 opacity:1;
                 cursor:pointer;
+                .coeur__1{
+                    opacity: 0;
+                }
             }
         }
     }

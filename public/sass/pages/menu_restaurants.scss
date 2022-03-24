@@ -1,13 +1,12 @@
 
-/* Debut Mise en page ALAFRANCAISE.HTML*/
-
+/* Debut Mise en page menu.HTML*/
 header i{
     position:absolute;
     top:8px;
     margin-left:-100px;
     color:#000000
 }
-.alafrancaise{
+.menu{
     &-imagerestaurant{
         & img{
             width:100%;
@@ -22,10 +21,11 @@ header i{
         margin-top: -40px;
         margin-bottom: 80px;
         &__titre{
-            width:100%;
+            width:90%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            margin-left: 25px;
             & h1{
                 margin-left: -40px;
                 font-family: 'Shrikhand', cursive;
@@ -33,11 +33,16 @@ header i{
                 font-size: 28px;
             }
             & i{
-                margin-top: 10px;
+                margin-top: 25px;
             }
         }
         &__liste{
             width:100%;
+            /* début animation apparition en fade in de la page */
+            animation: fadein 4s;
+            -moz-animation: fadein 4s; /* Firefox */
+            -webkit-animation: fadein 4s; /* Safari et Chrome */
+            -o-animation: fadein 4s; /* Opera */
             /* automatise la mise en page pour les entrées, plats et desserts*/
             @for $i from 1 through 3 {
                 &--#{$i} {
@@ -73,13 +78,13 @@ header i{
                             justify-content: space-between;
                             overflow: hidden;
                             &:hover{  /* apparition de la zone verte au survol */
-                                    .alafrancaise-lacarte__liste--1--plats--rectangle-animation{
+                                    .menu-lacarte__liste--1--plats--rectangle-animation{
                                     margin-right: 0px;
                                     min-width: 74px;
                                     transition: margin-right 0.5s;
                                 }
                                 /* rotation du cercle dans la zone verte*/
-                                .alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle{
+                                .menu-lacarte__liste--1--plats--rectangle-animation--circle{
                                     transform: rotate(360deg);
                             }
                         }
@@ -90,6 +95,7 @@ header i{
                             text-overflow: ellipsis;
                             &--menu{
                                 width: 230px;
+                                height:80px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
@@ -101,13 +107,24 @@ header i{
                                     white-space: nowrap;
                                     font-size: 18px;
                                     font-weight: 800;
+                                    width:300px;
                                 }                    
                                 & p {
                                     margin-top: 8px;
                                     white-space: nowrap;
                                     font-weight: 400;
-                                    font-size: 14px;
-                                }                              
+                                    font-size: 14px; 
+                                    width:260px;
+                                    
+                                }    
+                                &:hover{
+                                    & h3{
+                                        width:200px;
+                                    }   
+                                    & p{
+                                        width:200px;
+                                    }
+                                }                          
                             }
                             &--prix{
                                 display: flex;
@@ -117,7 +134,7 @@ header i{
                                 font-weight: bold;
                                 margin-left:20px;
                                 margin-right:20px;
-                                width: 35%;   
+                                width: 35%;
                             }
                         }
                         &--rectangle-animation{
