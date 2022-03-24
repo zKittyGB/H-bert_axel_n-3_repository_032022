@@ -1,0 +1,766 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main h1 {
+  margin-left: 20px;
+}
+
+/* Début Mise en page INDEX.HTML */
+/* Début Mise en page Loader */
+/*Animation du load spinner*/
+@keyframes load_spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Animation du load letter */
+@keyframes letter {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes loader {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+.loader {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 1900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* déclenchement de l'animation d'apparition du fond blanc ayant la durée de 3 répétition de l'anim lettre */
+  animation: loader 1000ms forwards 1 alternate cubic-bezier(0, 1.14, 0, 1) 3000ms;
+}
+.loader__circle {
+  border: 10px solid #F3F3F3;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* déclenchement de l'animation du load spinner */
+  animation: load_spinner 3s linear forwards;
+  /* positionnement du spinner au milieu */
+  margin: auto;
+  position: absolute;
+  top: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.loader__container {
+  position: absolute;
+  margin-top: 250px;
+  width: 40vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.loader__container__letter {
+  height: 100%;
+  width: 4vh;
+  font-family: "Shrikhand", cursive;
+  margin-right: 15px;
+  font-size: 34px;
+  /* déclenchement de l'animation des lettres */
+  animation: letter 1000ms backwards 3 alternate ease-in-out;
+}
+.loader__container__letter--1 {
+  animation-delay: 200ms;
+}
+.loader__container__letter--1-inv {
+  animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--2 {
+  animation-delay: 400ms;
+}
+.loader__container__letter--2-inv {
+  animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--3 {
+  animation-delay: 600ms;
+}
+.loader__container__letter--3-inv {
+  animation-delay: 600ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--4 {
+  animation-delay: 800ms;
+}
+.loader__container__letter--4-inv {
+  animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--5 {
+  animation-delay: 1000ms;
+}
+.loader__container__letter--5-inv {
+  animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--6 {
+  animation-delay: 1200ms;
+}
+.loader__container__letter--6-inv {
+  animation-delay: 1200ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--7 {
+  animation-delay: 1400ms;
+}
+.loader__container__letter--7-inv {
+  animation-delay: 1400ms;
+  animation-direction: alternate-reverse;
+}
+.loader__container__letter--8 {
+  animation-delay: 1600ms;
+}
+.loader__container__letter--8-inv {
+  animation-delay: 1600ms;
+  animation-direction: alternate-reverse;
+}
+
+/* FIN Mise en page du loader */
+/*  Mise en page Header */
+.header__logo img {
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* Début Mise en page section fonctionnement */
+.accueil-fonctionnement {
+  width: 100%;
+}
+.accueil-fonctionnement__recherche {
+  border-top: 2px solid #d0d0d0;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 45px;
+  box-shadow: 0 -5px 5px -5px #d0d0d0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.accueil-fonctionnement__recherche i {
+  margin-right: 10px;
+}
+.accueil-fonctionnement__ancre_restaurant {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 270px;
+}
+.accueil-fonctionnement__ancre_restaurant h1 {
+  /*retour à la ligne des H1 section fonctionnement */
+  margin-top: 30px;
+  width: 60%;
+}
+.accueil-fonctionnement__ancre_restaurant p {
+  /*retour à la ligne des P section fonctionnement */
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#accueil-fonctionnement__ancre_restaurant--button {
+  /* Mise en forme bouton "explorer nos restaurants"*/
+  border-radius: 25px 25px 25px 25px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* dégradé du background*/
+  color: #ffffff;
+  height: 45px;
+  width: 200px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+}
+
+/* Début Mise en page des Etapes */
+.accueil-fonctionnement__touteslesetapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accueil-fonctionnement__touteslesetapes h1 {
+  margin-left: -175px;
+}
+.accueil-fonctionnement__touteslesetapes__etape {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 20px 20px 20px 20px;
+  height: 70px;
+  width: 85%;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+}
+.accueil-fonctionnement__touteslesetapes__etape:hover {
+  background: #f5edff;
+  box-shadow: 3px 7px 5px #c0c0c0;
+}
+.accueil-fonctionnement__touteslesetapes__etape i {
+  margin-right: 25px;
+  color: #7b7b7b;
+}
+.accueil-fonctionnement__touteslesetapes__etape h1 {
+  width: 90%;
+}
+
+.accueil__etape--cerclenumetape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+  color: #ffffff;
+  margin-left: -10px;
+}
+
+/* Fin Mise en page des Etapes */
+/* Fin Mise en page fonctionnement*/
+/* Début Mise en page secdtion Accueil-Restaurants*/
+#accueil-restaurants {
+  min-width: 100%;
+  background-color: #f6f6f6;
+  min-width: 100%;
+}
+#accueil-restaurants h1 {
+  margin-top: 40px;
+}
+
+.accueil-restaurants__liste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 393px;
+}
+.accueil-restaurants__liste__card {
+  /* Mise en forme des cards*/
+  background: #ffffff;
+  height: 240px;
+  width: 90%;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px #c0c0c0;
+}
+.accueil-restaurants__liste__card__titre {
+  /* Mise en forme zone texte sous l'image*/
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin-top: -25px;
+}
+.accueil-restaurants__liste__card__titre--zonetexte {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.accueil-restaurants__liste__card__titre--bouton {
+  /*bouton like*/
+  margin-top: 10px;
+}
+.accueil-restaurants__liste__card__titre--bouton i {
+  position: absolute;
+}
+.accueil-restaurants__liste__card__titre--bouton--coeur2 i {
+  opacity: 0;
+  /* mise en dégradé du fond de l'image */
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  /* délimité le dégradé à la forme */
+  -webkit-background-clip: text;
+  /* rendre le reste transparant */
+  -webkit-text-fill-color: transparent;
+  /* transition d'apparition du coeur coloré*/
+}
+.accueil-restaurants__liste__card__titre--bouton--coeur2 i:hover {
+  transition: opacity 2s;
+  opacity: 1;
+  cursor: pointer;
+}
+.accueil-restaurants__liste__card img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 10px;
+}
+.accueil-restaurants__liste__card a {
+  text-decoration: none;
+  color: #000000;
+}
+.accueil-restaurants__liste__card h3 {
+  margin-bottom: 1%;
+  margin-top: 0px;
+  margin-left: 3%;
+}
+.accueil-restaurants__liste__card p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.accueil-restaurants__liste__card__image--nouveau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  top: -165px;
+  left: 260px;
+}
+.accueil-restaurants__liste__card__image--nouveau p {
+  color: #21997b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Fin Mise en page section Accueil-Restaurants*/
+/* FIN mise en page INDEX.HTML*/
+/* Debut Mise en page ALAFRANCAISE.HTML*/
+header i {
+  position: absolute;
+  top: 8px;
+  margin-left: -100px;
+  color: #000000;
+}
+
+.alafrancaise-imagerestaurant img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.alafrancaise-lacarte {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0px 0px;
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 80px;
+}
+.alafrancaise-lacarte__titre {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.alafrancaise-lacarte__titre h1 {
+  margin-left: -40px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  font-size: 28px;
+}
+.alafrancaise-lacarte__titre i {
+  margin-top: 10px;
+}
+.alafrancaise-lacarte__liste {
+  width: 100%;
+  /* automatise la mise en page pour les entrées, plats et desserts*/
+}
+.alafrancaise-lacarte__liste--1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alafrancaise-lacarte__liste--1--titre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.alafrancaise-lacarte__liste--1--titre--souligne {
+  min-height: 3px;
+  min-width: 40px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.alafrancaise-lacarte__liste--1 h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.alafrancaise-lacarte__liste--1--plats {
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.alafrancaise-lacarte__liste--1--plats:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.alafrancaise-lacarte__liste--1--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.alafrancaise-lacarte__liste--1--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.alafrancaise-lacarte__liste--1--plats--texte {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.alafrancaise-lacarte__liste--1--plats--texte--menu {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.alafrancaise-lacarte__liste--1--plats--texte--menu h3 {
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 0px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 800;
+}
+.alafrancaise-lacarte__liste--1--plats--texte--menu p {
+  margin-top: 8px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+}
+.alafrancaise-lacarte__liste--1--plats--texte--prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%;
+}
+.alafrancaise-lacarte__liste--1--plats--rectangle-animation {
+  background-color: #99E2D0;
+  max-width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -74px;
+}
+.alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: #ffffff;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+.alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle i {
+  margin-left: 5px;
+}
+.alafrancaise-lacarte__liste--2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alafrancaise-lacarte__liste--2--titre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.alafrancaise-lacarte__liste--2--titre--souligne {
+  min-height: 3px;
+  min-width: 40px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.alafrancaise-lacarte__liste--2 h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.alafrancaise-lacarte__liste--2--plats {
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.alafrancaise-lacarte__liste--2--plats:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.alafrancaise-lacarte__liste--2--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.alafrancaise-lacarte__liste--2--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.alafrancaise-lacarte__liste--2--plats--texte {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.alafrancaise-lacarte__liste--2--plats--texte--menu {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.alafrancaise-lacarte__liste--2--plats--texte--menu h3 {
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 0px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 800;
+}
+.alafrancaise-lacarte__liste--2--plats--texte--menu p {
+  margin-top: 8px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+}
+.alafrancaise-lacarte__liste--2--plats--texte--prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%;
+}
+.alafrancaise-lacarte__liste--2--plats--rectangle-animation {
+  background-color: #99E2D0;
+  max-width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -74px;
+}
+.alafrancaise-lacarte__liste--2--plats--rectangle-animation--circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: #ffffff;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+.alafrancaise-lacarte__liste--2--plats--rectangle-animation--circle i {
+  margin-left: 5px;
+}
+.alafrancaise-lacarte__liste--3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alafrancaise-lacarte__liste--3--titre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.alafrancaise-lacarte__liste--3--titre--souligne {
+  min-height: 3px;
+  min-width: 40px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.alafrancaise-lacarte__liste--3 h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.alafrancaise-lacarte__liste--3--plats {
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.alafrancaise-lacarte__liste--3--plats:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.alafrancaise-lacarte__liste--3--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.alafrancaise-lacarte__liste--3--plats:hover .alafrancaise-lacarte__liste--1--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.alafrancaise-lacarte__liste--3--plats--texte {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.alafrancaise-lacarte__liste--3--plats--texte--menu {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.alafrancaise-lacarte__liste--3--plats--texte--menu h3 {
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 0px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 800;
+}
+.alafrancaise-lacarte__liste--3--plats--texte--menu p {
+  margin-top: 8px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+}
+.alafrancaise-lacarte__liste--3--plats--texte--prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%;
+}
+.alafrancaise-lacarte__liste--3--plats--rectangle-animation {
+  background-color: #99E2D0;
+  max-width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -74px;
+}
+.alafrancaise-lacarte__liste--3--plats--rectangle-animation--circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: #ffffff;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+.alafrancaise-lacarte__liste--3--plats--rectangle-animation--circle i {
+  margin-left: 5px;
+}
+.alafrancaise-lacarte__commander {
+  margin-top: 40px;
+}
+
+/* Début Mise en page Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100%;
+  font-weight: 400;
+  color: #ffffff;
+  background: #353535;
+}
+footer ul {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+footer i {
+  margin-right: 7px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Fin Mise en page Footer*/
+
+/*# sourceMappingURL=style.css.map */

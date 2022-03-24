@@ -1,0 +1,363 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 393px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Début Mise en page Header */
+.accueil-header__logo img {
+  height: 25px;
+  margin-top: 10px;
+}
+
+/* Fin Mise en page Header */
+/* Début Mise en page section fonctionnement */
+.accueil-fonctionnement {
+  width: 100%;
+}
+
+.accueil-fonctionnement__recherche {
+  border-top: 2px solid #d0d0d0;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 45px;
+  -webkit-box-shadow: 0 -5px 5px -5px #d0d0d0;
+          box-shadow: 0 -5px 5px -5px #d0d0d0;
+}
+
+.accueil-fonctionnement__ancre_restaurant {
+  background: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+}
+
+.accueil-fonctionnement__ancre_restaurant h1 {
+  /*retour à la ligne des H1 section fonctionnement */
+  margin-top: 30px;
+  width: 60%;
+}
+
+.accueil-fonctionnement__ancre_restaurant p {
+  /*retour à la ligne des P section fonctionnement */
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#accueil-fonctionnement__ancre_restaurant--button {
+  /* Mise en forme bouton "explorer nos restaurants"*/
+  border-radius: 25px 25px 25px 25px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* dégradé du background*/
+  color: #ffffff;
+  height: 45px;
+  width: 200px;
+  -webkit-box-shadow: 1px 5px 10px #c0c0c0;
+          box-shadow: 1px 5px 10px #c0c0c0;
+}
+
+/* Début Mise en page des Etapes */
+.accueil-fonctionnement__touteslesetapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil-fonctionnement__touteslesetapes__etape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f6f6f6;
+  border-radius: 20px 20px 20px 20px;
+  height: 70px;
+  width: 85%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 5px 10px #c0c0c0;
+          box-shadow: 1px 5px 10px #c0c0c0;
+}
+
+.accueil-fonctionnement__touteslesetapes__etape:hover {
+  background: #f5edff;
+  -webkit-box-shadow: 3px 7px 5px #c0c0c0;
+          box-shadow: 3px 7px 5px #c0c0c0;
+}
+
+.accueil-fonctionnement__touteslesetapes__etape i {
+  margin-right: 25px;
+  color: #7b7b7b;
+}
+
+.accueil-fonctionnement__touteslesetapes__etape h1 {
+  width: 90%;
+}
+
+.accueil__etape--cerclenumetape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+  color: #ffffff;
+  margin-left: -10px;
+}
+
+/* Fin Mise en page des Etapes */
+/* Fin Mise en page fonctionnement*/
+/* Début Mise en page section Accueil-Restaurants*/
+.accueil-restaurants {
+  background: #f6f6f6;
+  min-width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.accueil-restaurants h1 {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.accueil-restaurants__liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.accueil-restaurants__liste__card {
+  /* Mise en forme des cards*/
+  background: #ffffff;
+  height: 240px;
+  width: 90%;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px #c0c0c0;
+          box-shadow: 1px 1px 5px #c0c0c0;
+}
+
+.accueil-restaurants__liste__card__titre {
+  /* Mise en forme zone texte sous l'image*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  margin-top: -25px;
+}
+
+.accueil-restaurants__liste__card__titre--zonetexte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.accueil-restaurants__liste__card__titre--bouton {
+  /*bouton like*/
+  margin-top: 10px;
+}
+
+.accueil-restaurants__liste__card__titre--bouton--solid {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0;
+}
+
+.accueil-restaurants__liste__card__titre--bouton i {
+  position: absolute;
+}
+
+.accueil-restaurants__liste__card__titre--bouton i:hover {
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.accueil-restaurants__liste__card img {
+  width: 100%;
+  height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 10px;
+}
+
+.accueil-restaurants__liste__card a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.accueil-restaurants__liste__card h3 {
+  margin-bottom: 1%;
+  margin-top: 0px;
+  margin-left: 3%;
+}
+
+.accueil-restaurants__liste__card p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+  margin-left: 3%;
+}
+
+.accueil-restaurants__liste__card__image--nouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  top: -165px;
+  left: 260px;
+}
+
+.accueil-restaurants__liste__card__image--nouveau p {
+  color: #21997b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Fin Mise en page section Accueil-Restaurants*/
+/* Début Mise en page Footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  font-weight: 400;
+  color: #ffffff;
+  background: #353535;
+}
+
+footer ul {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+footer p {
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+footer i {
+  margin-right: 7px;
+}
+
+/* Fin Mise en page Footer*/
+/*# sourceMappingURL=main.css.map */
