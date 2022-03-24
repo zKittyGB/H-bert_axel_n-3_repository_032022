@@ -470,7 +470,7 @@ header i {
   font-size: 28px;
 }
 .menu-lacarte__titre i {
-  margin-top: 25px;
+  margin-top: 45px;
 }
 .menu-lacarte__liste {
   width: 100%;
@@ -483,31 +483,29 @@ header i {
   -o-animation: fadein 4s;
   /* Opera */
   /* automatise la mise en page pour les entrées, plats et desserts*/
-}
-.menu-lacarte__liste--1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu-lacarte__liste--1--titre {
+.menu-lacarte__liste--titre {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 90%;
 }
-.menu-lacarte__liste--1--titre--souligne {
+.menu-lacarte__liste--titre--souligne {
   min-height: 3px;
   min-width: 40px;
   background-color: #99E2D0;
   margin-top: -10px;
   margin-bottom: 20px;
 }
-.menu-lacarte__liste--1 h3 {
+.menu-lacarte__liste h3 {
   font-size: 16px;
   font-weight: 400;
 }
-.menu-lacarte__liste--1--plats {
+.menu-lacarte__liste--plats {
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -518,25 +516,31 @@ header i {
   justify-content: space-between;
   overflow: hidden;
 }
-.menu-lacarte__liste--1--plats:hover {
+.menu-lacarte__liste--plats:hover {
   /* apparition de la zone verte au survol */
   /* rotation du cercle dans la zone verte*/
 }
-.menu-lacarte__liste--1--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation {
+.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--rectangle-animation {
   margin-right: 0px;
   min-width: 74px;
   transition: margin-right 0.5s;
 }
-.menu-lacarte__liste--1--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation--circle {
+.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
   transform: rotate(360deg);
 }
-.menu-lacarte__liste--1--plats--texte {
+.menu-lacarte__liste--plats--texte {
   display: flex;
   flex-direction: row;
   width: 100%;
   text-overflow: ellipsis;
 }
-.menu-lacarte__liste--1--plats--texte--menu {
+.menu-lacarte__liste--plats--texte--menu {
   width: 230px;
   height: 80px;
   display: flex;
@@ -544,7 +548,7 @@ header i {
   justify-content: space-between;
   margin-left: 10px;
 }
-.menu-lacarte__liste--1--plats--texte--menu h3 {
+.menu-lacarte__liste--plats--texte--menu h3 {
   margin-bottom: 0;
   margin-top: 15px;
   margin-left: 0px;
@@ -553,20 +557,14 @@ header i {
   font-weight: 800;
   width: 300px;
 }
-.menu-lacarte__liste--1--plats--texte--menu p {
+.menu-lacarte__liste--plats--texte--menu p {
   margin-top: 8px;
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
   width: 260px;
 }
-.menu-lacarte__liste--1--plats--texte--menu:hover h3 {
-  width: 200px;
-}
-.menu-lacarte__liste--1--plats--texte--menu:hover p {
-  width: 200px;
-}
-.menu-lacarte__liste--1--plats--texte--prix {
+.menu-lacarte__liste--plats--texte--prix {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -576,7 +574,7 @@ header i {
   margin-right: 20px;
   width: 35%;
 }
-.menu-lacarte__liste--1--plats--rectangle-animation {
+.menu-lacarte__liste--plats--rectangle-animation {
   background-color: #99E2D0;
   max-width: 74px;
   display: flex;
@@ -584,7 +582,7 @@ header i {
   justify-content: center;
   margin-right: -74px;
 }
-.menu-lacarte__liste--1--plats--rectangle-animation--circle {
+.menu-lacarte__liste--plats--rectangle-animation--circle {
   width: 25px;
   height: 25px;
   border-radius: 100px;
@@ -596,237 +594,7 @@ header i {
   align-content: center;
   transition: transform 0.5s;
 }
-.menu-lacarte__liste--1--plats--rectangle-animation--circle i {
-  margin-left: 5px;
-}
-.menu-lacarte__liste--2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu-lacarte__liste--2--titre {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 90%;
-}
-.menu-lacarte__liste--2--titre--souligne {
-  min-height: 3px;
-  min-width: 40px;
-  background-color: #99E2D0;
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-.menu-lacarte__liste--2 h3 {
-  font-size: 16px;
-  font-weight: 400;
-}
-.menu-lacarte__liste--2--plats {
-  width: 95%;
-  height: 70px;
-  background-color: #ffffff;
-  border-radius: 15px 15px 15px 15px;
-  margin-bottom: 20px;
-  box-shadow: 1px 5px 10px #c0c0c0;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.menu-lacarte__liste--2--plats:hover {
-  /* apparition de la zone verte au survol */
-  /* rotation du cercle dans la zone verte*/
-}
-.menu-lacarte__liste--2--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation {
-  margin-right: 0px;
-  min-width: 74px;
-  transition: margin-right 0.5s;
-}
-.menu-lacarte__liste--2--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation--circle {
-  transform: rotate(360deg);
-}
-.menu-lacarte__liste--2--plats--texte {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  text-overflow: ellipsis;
-}
-.menu-lacarte__liste--2--plats--texte--menu {
-  width: 230px;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-.menu-lacarte__liste--2--plats--texte--menu h3 {
-  margin-bottom: 0;
-  margin-top: 15px;
-  margin-left: 0px;
-  white-space: nowrap;
-  font-size: 18px;
-  font-weight: 800;
-  width: 300px;
-}
-.menu-lacarte__liste--2--plats--texte--menu p {
-  margin-top: 8px;
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 14px;
-  width: 260px;
-}
-.menu-lacarte__liste--2--plats--texte--menu:hover h3 {
-  width: 200px;
-}
-.menu-lacarte__liste--2--plats--texte--menu:hover p {
-  width: 200px;
-}
-.menu-lacarte__liste--2--plats--texte--prix {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 35%;
-}
-.menu-lacarte__liste--2--plats--rectangle-animation {
-  background-color: #99E2D0;
-  max-width: 74px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -74px;
-}
-.menu-lacarte__liste--2--plats--rectangle-animation--circle {
-  width: 25px;
-  height: 25px;
-  border-radius: 100px;
-  background: #ffffff;
-  color: #99E2D0;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  transition: transform 0.5s;
-}
-.menu-lacarte__liste--2--plats--rectangle-animation--circle i {
-  margin-left: 5px;
-}
-.menu-lacarte__liste--3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu-lacarte__liste--3--titre {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 90%;
-}
-.menu-lacarte__liste--3--titre--souligne {
-  min-height: 3px;
-  min-width: 40px;
-  background-color: #99E2D0;
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-.menu-lacarte__liste--3 h3 {
-  font-size: 16px;
-  font-weight: 400;
-}
-.menu-lacarte__liste--3--plats {
-  width: 95%;
-  height: 70px;
-  background-color: #ffffff;
-  border-radius: 15px 15px 15px 15px;
-  margin-bottom: 20px;
-  box-shadow: 1px 5px 10px #c0c0c0;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.menu-lacarte__liste--3--plats:hover {
-  /* apparition de la zone verte au survol */
-  /* rotation du cercle dans la zone verte*/
-}
-.menu-lacarte__liste--3--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation {
-  margin-right: 0px;
-  min-width: 74px;
-  transition: margin-right 0.5s;
-}
-.menu-lacarte__liste--3--plats:hover .menu-lacarte__liste--1--plats--rectangle-animation--circle {
-  transform: rotate(360deg);
-}
-.menu-lacarte__liste--3--plats--texte {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  text-overflow: ellipsis;
-}
-.menu-lacarte__liste--3--plats--texte--menu {
-  width: 230px;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-.menu-lacarte__liste--3--plats--texte--menu h3 {
-  margin-bottom: 0;
-  margin-top: 15px;
-  margin-left: 0px;
-  white-space: nowrap;
-  font-size: 18px;
-  font-weight: 800;
-  width: 300px;
-}
-.menu-lacarte__liste--3--plats--texte--menu p {
-  margin-top: 8px;
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 14px;
-  width: 260px;
-}
-.menu-lacarte__liste--3--plats--texte--menu:hover h3 {
-  width: 200px;
-}
-.menu-lacarte__liste--3--plats--texte--menu:hover p {
-  width: 200px;
-}
-.menu-lacarte__liste--3--plats--texte--prix {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 35%;
-}
-.menu-lacarte__liste--3--plats--rectangle-animation {
-  background-color: #99E2D0;
-  max-width: 74px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -74px;
-}
-.menu-lacarte__liste--3--plats--rectangle-animation--circle {
-  width: 25px;
-  height: 25px;
-  border-radius: 100px;
-  background: #ffffff;
-  color: #99E2D0;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  transition: transform 0.5s;
-}
-.menu-lacarte__liste--3--plats--rectangle-animation--circle i {
+.menu-lacarte__liste--plats--rectangle-animation--circle i {
   margin-left: 5px;
 }
 .menu-lacarte__commander {

@@ -33,7 +33,7 @@ header i{
                 font-size: 28px;
             }
             & i{
-                margin-top: 25px;
+                margin-top: 45px;
             }
         }
         &__liste{
@@ -44,125 +44,118 @@ header i{
             -webkit-animation: fadein 4s; /* Safari et Chrome */
             -o-animation: fadein 4s; /* Opera */
             /* automatise la mise en page pour les entrées, plats et desserts*/
-            @for $i from 1 through 3 {
-                &--#{$i} {
-                        width:100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        &--titre{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            width:90%;
-                            &--souligne{
-                                min-height:3px;
-                                min-width:40px;
-                                background-color: #99E2D0;
-                                margin-top: -10px;
-                                margin-bottom: 20px;
-                            }
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                &--titre{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width:90%;
+                    &--souligne{
+                        min-height:3px;
+                        min-width:40px;
+                        background-color: #99E2D0;
+                        margin-top: -10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                & h3{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                &--plats{
+                    width: 95%;
+                    height:70px;
+                    background-color: #ffffff;
+                    border-radius: 15px 15px 15px 15px;
+                    margin-bottom: 20px;
+                    box-shadow: 1px 5px 10px #c0c0c0;
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    &:hover{  /* apparition de la zone verte au survol */  
+                        .menu-lacarte__liste--plats--texte--menu h3{
+                            width:200px;
                         }
-                        & h3{
-                            font-size: 16px;
-                            font-weight: 400;
+                        .menu-lacarte__liste--plats--texte--menu p{
+                            width:160px;
+                        }                           
+                        .menu-lacarte__liste--plats--rectangle-animation{
+                            margin-right: 0px;
+                            min-width: 74px;
+                            transition: margin-right 0.5s;
                         }
-                        &--plats{
-                            width: 95%;
-                            height:70px;
-                            background-color: #ffffff;
-                            border-radius: 15px 15px 15px 15px;
-                            margin-bottom: 20px;
-                            box-shadow: 1px 5px 10px #c0c0c0;
-                            display: flex;
-                            justify-content: space-between;
-                            overflow: hidden;
-                            &:hover{  /* apparition de la zone verte au survol */
-                                    .menu-lacarte__liste--1--plats--rectangle-animation{
-                                    margin-right: 0px;
-                                    min-width: 74px;
-                                    transition: margin-right 0.5s;
-                                }
-                                /* rotation du cercle dans la zone verte*/
-                                .menu-lacarte__liste--1--plats--rectangle-animation--circle{
-                                    transform: rotate(360deg);
-                            }
-                        }
-                        &--texte{
-                            display: flex;
-                            flex-direction: row;
-                            width: 100%;
-                            text-overflow: ellipsis;
-                            &--menu{
-                                width: 230px;
-                                height:80px;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                margin-left: 10px;
-                                & h3 {
-                                    margin-bottom: 0;
-                                    margin-top: 15px;
-                                    margin-left: 0px;
-                                    white-space: nowrap;
-                                    font-size: 18px;
-                                    font-weight: 800;
-                                    width:300px;
-                                }                    
-                                & p {
-                                    margin-top: 8px;
-                                    white-space: nowrap;
-                                    font-weight: 400;
-                                    font-size: 14px; 
-                                    width:260px;
-                                    
-                                }    
-                                &:hover{
-                                    & h3{
-                                        width:200px;
-                                    }   
-                                    & p{
-                                        width:200px;
-                                    }
-                                }                          
-                            }
-                            &--prix{
-                                display: flex;
-                                justify-content: flex-end;
-                                align-items: flex-end;
-                                align-self: flex-end;
-                                font-weight: bold;
-                                margin-left:20px;
-                                margin-right:20px;
-                                width: 35%;
-                            }
-                        }
-                        &--rectangle-animation{
-                            background-color: #99E2D0;
-                            max-width: 74px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-right: -74px;
-                            &--circle{                                
-                                    width: 25px;
-                                    height: 25px;
-                                    border-radius: 100px;
-                                    background: #ffffff;
-                                    color: #99E2D0;
-                                    display: flex;
-                                    align-items: center;
-                                    align-self: center;
-                                    align-content: center;
-                                    transition: transform 0.5s;
-                                    & i {
-                                        margin-left: 5px;
-                                    }
-                            }
+                        /* rotation du cercle dans la zone verte*/
+                        .menu-lacarte__liste--plats--rectangle-animation--circle{
+                            transform: rotate(360deg);
                         }
                     }
-                } 
-            }
+                    &--texte{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        &--menu{
+                            width: 230px;
+                            height:80px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-left: 10px;
+                            & h3 {
+                                margin-bottom: 0;
+                                margin-top: 15px;
+                                margin-left: 0px;
+                                white-space: nowrap;
+                                font-size: 18px;
+                                font-weight: 800;
+                                width:300px;
+                            }                    
+                            & p {
+                                margin-top: 8px;
+                                white-space: nowrap;
+                                font-weight: 400;
+                                font-size: 14px; 
+                            width:260px;    
+                            }                               
+                        }
+                    &--prix{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        align-self: flex-end;
+                        font-weight: bold;
+                        margin-left:20px;
+                        margin-right:20px;
+                        width: 35%;
+                    }
+                }
+                &--rectangle-animation{
+                    background-color: #99E2D0;
+                    max-width: 74px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: -74px;
+                    &--circle{                                
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100px;
+                        background: #ffffff;
+                        color: #99E2D0;
+                        display: flex;
+                        align-items: center;
+                        align-self: center;
+                        align-content: center;
+                        transition: transform 0.5s;
+                        & i {
+                            margin-left: 5px;
+                        }
+                    }
+                }    
+            } 
         }
         &__commander{
             margin-top:40px;
