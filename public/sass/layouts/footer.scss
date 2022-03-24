@@ -1,0 +1,33 @@
+/* Début Mise en page Footer*/
+footer{
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width:100%;
+    font-weight: 400;
+    color:#ffffff;
+    background:#353535;
+    & ul{
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+    & li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        padding-left: 25px;
+    }
+    & p{
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+    & i{
+        margin-right:7px;
+    }
+    & a{
+        text-decoration: none;
+        color:#ffffff;
+    }
+}
+/* Fin Mise en page Footer*/

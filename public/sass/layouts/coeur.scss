@@ -1,0 +1,26 @@
+/* Mise en forme des coeurs */
+
+.fa-heart{                      /*bouton like*/
+    margin-top: 10px;
+    position:absolute;
+}
+
+    .coeur__2{
+        & i{
+            opacity:0;
+            /* mise en dégradé du fond de l'image */
+            background-image: linear-gradient($colour-secondary, $colour-primary); 
+            /* délimité le dégradé à la forme */
+            -webkit-background-clip: text;
+            /* rendre le reste transparant */
+            -webkit-text-fill-color: transparent;
+            /* transition d'apparition du coeur coloré*/
+            &:hover{
+                transition: opacity 2s;
+                opacity:1;
+                cursor:pointer;
+            }
+        }
+    }
+/* Fin de mise en forme des coeurs */
+

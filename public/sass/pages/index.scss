@@ -21,39 +21,6 @@ body{
 /* Début Mise en page INDEX.HTML */
 /* Début Mise en page Loader */
 
-/*Animation du load spinner*/
-@keyframes load_spinner {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        opacity: 0;
-    }
-
-}
-/* Animation du load letter */
-@keyframes letter {
-    from { 
-        transform: scaleY(0.5);
-    }  
-    to { 
-        transform: scaleY(1.0);
-    }
-}
-@keyframes loader {
-    from { 
-        opacity: 0.5;
-    }  
-    to { 
-        opacity: 0;
-        z-index: -2;
-    }
-}
-
-
 
 .loader{
     position: absolute;
@@ -190,6 +157,9 @@ body{
         &:hover{
             background:#f5edff;
             box-shadow: 3px 7px 5px $colour-boxshadow;
+            i{
+                color: $colour-primary;
+            }
         }
         & i{
             margin-right:25px;
@@ -248,30 +218,7 @@ body{
                     display:flex;
                     flex-direction: column;
                     width:90%;
-                }
-                &--bouton{                      /*bouton like*/
-                    margin-top: 10px;
-                    & i{
-                        position:absolute;
-                    }
-                    &--coeur2{
-                        & i{
-                            opacity:0;
-                            /* mise en dégradé du fond de l'image */
-                            background-image: linear-gradient($colour-secondary, $colour-primary); 
-                            /* délimité le dégradé à la forme */
-                            -webkit-background-clip: text;
-                            /* rendre le reste transparant */
-                            -webkit-text-fill-color: transparent;
-                            /* transition d'apparition du coeur coloré*/
-                            &:hover{
-                                transition: opacity 2s;
-                                opacity:1;
-                                cursor:pointer;
-                            }
-                        }
-                    }
-                }
+                }                
             }
             & img{
                 width:100%;
@@ -315,36 +262,3 @@ body{
 
 
 
-/* Début Mise en page Footer*/
-footer{
-    display:flex;
-    flex-direction: column;
-    align-content: flex-start;
-    width:100%;
-    font-weight: 400;
-    color:#ffffff;
-    background:#353535;
-    & ul{
-        margin-top: 0px;
-        padding-left: 0px;
-    }
-    & li{
-        list-style-type: none;
-        margin-bottom: 10px;
-        padding-left: 25px;
-    }
-    & p{
-        font-family: 'Shrikhand', cursive;
-        font-size: 20px;
-        padding-left: 25px;
-        margin-bottom: 15px;
-    }
-    & i{
-        margin-right:7px;
-    }
-    & a{
-        text-decoration: none;
-        color:#ffffff;
-    }
-}
-/* Fin Mise en page Footer*/

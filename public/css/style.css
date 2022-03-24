@@ -1,53 +1,36 @@
 @charset "UTF-8";
 /* variables pour les couleurs générales */
 /* variables pour les animations du loader */
+body {
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  margin: 0;
+  font-weight: 500;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main h1 {
+  margin-left: 20px;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
-p {
+p, h1, h3, h4 {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  box-sizing: border-box;
-}
-
-/* Début Mise en page Footer*/
-footer {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 100%;
-  font-weight: 400;
-  color: #ffffff;
-  background: #353535;
-}
-footer ul {
-  margin-top: 0px;
-  padding-left: 0px;
-}
-footer li {
-  list-style-type: none;
-  margin-bottom: 10px;
-  padding-left: 25px;
-}
-footer p {
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-  padding-left: 25px;
-  margin-bottom: 15px;
-}
-footer i {
-  margin-right: 7px;
-}
-footer a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* Fin Mise en page Footer*/
 body {
   color: #000000;
   font-size: 16px;
@@ -70,35 +53,6 @@ body {
 
 /* Début Mise en page INDEX.HTML */
 /* Début Mise en page Loader */
-/*Animation du load spinner*/
-@keyframes load_spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-/* Animation du load letter */
-@keyframes letter {
-  from {
-    transform: scaleY(0.5);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
-@keyframes loader {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 0;
-    z-index: -2;
-  }
-}
 .loader {
   position: absolute;
   z-index: 2;
@@ -285,6 +239,9 @@ body {
   background: #f5edff;
   box-shadow: 3px 7px 5px #d0d0d0;
 }
+.accueil-fonctionnement__touteslesetapes__etape:hover i {
+  color: #9356DC;
+}
 .accueil-fonctionnement__touteslesetapes__etape i {
   margin-right: 25px;
   color: #7b7b7b;
@@ -346,28 +303,6 @@ body {
   flex-direction: column;
   width: 90%;
 }
-.accueil-restaurants__liste__card__titre--bouton {
-  /*bouton like*/
-  margin-top: 10px;
-}
-.accueil-restaurants__liste__card__titre--bouton i {
-  position: absolute;
-}
-.accueil-restaurants__liste__card__titre--bouton--coeur2 i {
-  opacity: 0;
-  /* mise en dégradé du fond de l'image */
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  /* délimité le dégradé à la forme */
-  -webkit-background-clip: text;
-  /* rendre le reste transparant */
-  -webkit-text-fill-color: transparent;
-  /* transition d'apparition du coeur coloré*/
-}
-.accueil-restaurants__liste__card__titre--bouton--coeur2 i:hover {
-  transition: opacity 2s;
-  opacity: 1;
-  cursor: pointer;
-}
 .accueil-restaurants__liste__card img {
   width: 100%;
   height: 165px;
@@ -405,6 +340,59 @@ body {
 }
 
 /* Fin Mise en page section Accueil-Restaurants*/
+/* Animation du load letter */
+@keyframes letter {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes loader {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/*Animation du load spinner*/
+@keyframes load_spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Mise en forme des coeurs */
+.fa-heart {
+  /*bouton like*/
+  margin-top: 10px;
+  position: absolute;
+}
+
+.coeur__2 i {
+  opacity: 0;
+  /* mise en dégradé du fond de l'image */
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  /* délimité le dégradé à la forme */
+  -webkit-background-clip: text;
+  /* rendre le reste transparant */
+  -webkit-text-fill-color: transparent;
+  /* transition d'apparition du coeur coloré*/
+}
+.coeur__2 i:hover {
+  transition: opacity 2s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Fin de mise en forme des coeurs */
 /* Début Mise en page Footer*/
 footer {
   display: flex;
@@ -1157,36 +1145,6 @@ header i {
 }
 .alafrancaise-lacarte__commander {
   margin-top: 40px;
-}
-
-/* Animation du load letter */
-@keyframes letter {
-  from {
-    transform: scaleY(0.5);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
-@keyframes loader {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 0;
-    z-index: -2;
-  }
-}
-/*Animation du load spinner*/
-@keyframes load_spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
