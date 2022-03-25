@@ -474,21 +474,77 @@ header i {
 }
 .menu-lacarte__liste {
   width: 100%;
-  /* début animation apparition en fade in de la page */
-  animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  /* Firefox */
-  -webkit-animation: fadein 4s;
-  /* Safari et Chrome */
-  -o-animation: fadein 4s;
-  /* Opera */
   /* automatise la mise en page pour les entrées, plats et desserts*/
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu-lacarte__liste--titre {
+.menu-lacarte__liste--titre--1 {
+  animation: fadein 3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--2 {
+  animation: fadein 4s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--3 {
+  animation: fadein 5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--4 {
+  animation: fadein 6s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--5 {
+  animation: fadein 7s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--6 {
+  animation: fadein 8s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--7 {
+  animation: fadein 9s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--8 {
+  animation: fadein 10s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--9 {
+  animation: fadein 11s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.menu-lacarte__liste--titre--10 {
+  animation: fadein 12s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -505,7 +561,8 @@ header i {
   font-size: 16px;
   font-weight: 400;
 }
-.menu-lacarte__liste--plats {
+.menu-lacarte__liste--plats--1 {
+  animation: fadein 2.5s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -516,22 +573,292 @@ header i {
   justify-content: space-between;
   overflow: hidden;
 }
-.menu-lacarte__liste--plats:hover {
+.menu-lacarte__liste--plats--1:hover {
   /* apparition de la zone verte au survol */
   /* rotation du cercle dans la zone verte*/
 }
-.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--texte--menu h3 {
+.menu-lacarte__liste--plats--1:hover .menu-lacarte__liste--plats--texte--menu h3 {
   width: 200px;
 }
-.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--texte--menu p {
+.menu-lacarte__liste--plats--1:hover .menu-lacarte__liste--plats--texte--menu p {
   width: 160px;
 }
-.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--rectangle-animation {
+.menu-lacarte__liste--plats--1:hover .menu-lacarte__liste--plats--rectangle-animation {
   margin-right: 0px;
   min-width: 74px;
   transition: margin-right 0.5s;
 }
-.menu-lacarte__liste--plats:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+.menu-lacarte__liste--plats--1:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--2 {
+  animation: fadein 3s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--2:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--2:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--2:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--2:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--2:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--3 {
+  animation: fadein 3.5s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--3:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--3:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--3:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--3:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--3:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--4 {
+  animation: fadein 4s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--4:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--4:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--4:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--4:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--4:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--5 {
+  animation: fadein 4.5s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--5:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--5:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--5:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--5:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--5:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--6 {
+  animation: fadein 5s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--6:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--6:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--6:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--6:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--6:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--7 {
+  animation: fadein 5.5s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--7:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--7:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--7:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--7:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--7:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--8 {
+  animation: fadein 6s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--8:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--8:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--8:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--8:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--8:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--9 {
+  animation: fadein 6.5s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--9:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--9:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--9:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--9:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--9:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
+  transform: rotate(360deg);
+}
+.menu-lacarte__liste--plats--10 {
+  animation: fadein 7s;
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-lacarte__liste--plats--10:hover {
+  /* apparition de la zone verte au survol */
+  /* rotation du cercle dans la zone verte*/
+}
+.menu-lacarte__liste--plats--10:hover .menu-lacarte__liste--plats--texte--menu h3 {
+  width: 200px;
+}
+.menu-lacarte__liste--plats--10:hover .menu-lacarte__liste--plats--texte--menu p {
+  width: 160px;
+}
+.menu-lacarte__liste--plats--10:hover .menu-lacarte__liste--plats--rectangle-animation {
+  margin-right: 0px;
+  min-width: 74px;
+  transition: margin-right 0.5s;
+}
+.menu-lacarte__liste--plats--10:hover .menu-lacarte__liste--plats--rectangle-animation--circle {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--texte {

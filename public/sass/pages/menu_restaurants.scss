@@ -38,21 +38,21 @@ header i{
         }
         &__liste{
             width:100%;
-            /* début animation apparition en fade in de la page */
-            animation: fadein 4s;
-            -moz-animation: fadein 4s; /* Firefox */
-            -webkit-animation: fadein 4s; /* Safari et Chrome */
-            -o-animation: fadein 4s; /* Opera */
             /* automatise la mise en page pour les entrées, plats et desserts*/
             width:100%;
             display: flex;
             flex-direction: column;
             align-items: center;
                 &--titre{
-                    display: flex;
+                    @for $i from 1 through 10 {
+                        &--#{$i} {
+                            animation:fadein 2s+$i;
+                            display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     width:90%;
+                        }
+                    }
                     &--souligne{
                         min-height:3px;
                         min-width:40px;
@@ -66,30 +66,35 @@ header i{
                     font-weight: 400;
                 }
                 &--plats{
-                    width: 95%;
-                    height:70px;
-                    background-color: #ffffff;
-                    border-radius: 15px 15px 15px 15px;
-                    margin-bottom: 20px;
-                    box-shadow: 1px 5px 10px #c0c0c0;
-                    display: flex;
-                    justify-content: space-between;
-                    overflow: hidden;
-                    &:hover{  /* apparition de la zone verte au survol */  
-                        .menu-lacarte__liste--plats--texte--menu h3{
-                            width:200px;
-                        }
-                        .menu-lacarte__liste--plats--texte--menu p{
-                            width:160px;
-                        }                           
-                        .menu-lacarte__liste--plats--rectangle-animation{
-                            margin-right: 0px;
-                            min-width: 74px;
-                            transition: margin-right 0.5s;
-                        }
-                        /* rotation du cercle dans la zone verte*/
-                        .menu-lacarte__liste--plats--rectangle-animation--circle{
-                            transform: rotate(360deg);
+                    @for $i from 1 through 10 {
+                        &--#{$i} {
+                            animation:fadein 2s+$i/2;
+                            width: 95%;
+                            height:70px;
+                            background-color: #ffffff;
+                            border-radius: 15px 15px 15px 15px;
+                            margin-bottom: 20px;
+                            box-shadow: 1px 5px 10px #c0c0c0;
+                            display: flex;
+                            justify-content: space-between;
+                            overflow: hidden;                       
+                            &:hover{  /* apparition de la zone verte au survol */  
+                                .menu-lacarte__liste--plats--texte--menu h3{
+                                    width:200px;
+                                }
+                                .menu-lacarte__liste--plats--texte--menu p{
+                                    width:160px;
+                                }                           
+                                .menu-lacarte__liste--plats--rectangle-animation{
+                                    margin-right: 0px;
+                                    min-width: 74px;
+                                    transition: margin-right 0.5s;
+                                }
+                                /* rotation du cercle dans la zone verte*/
+                                .menu-lacarte__liste--plats--rectangle-animation--circle{
+                                    transform: rotate(360deg);
+                                }
+                            }
                         }
                     }
                     &--texte{
@@ -118,47 +123,46 @@ header i{
                                 white-space: nowrap;
                                 font-weight: 400;
                                 font-size: 14px; 
-                            width:260px;    
+                                width:260px;    
                             }                               
                         }
-                    &--prix{
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: flex-end;
-                        align-self: flex-end;
-                        font-weight: bold;
-                        margin-left:20px;
-                        margin-right:20px;
-                        width: 35%;
-                    }
-                }
-                &--rectangle-animation{
-                    background-color: #99E2D0;
-                    max-width: 74px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: -74px;
-                    &--circle{                                
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 100px;
-                        background: #ffffff;
-                        color: #99E2D0;
-                        display: flex;
-                        align-items: center;
-                        align-self: center;
-                        align-content: center;
-                        transition: transform 0.5s;
-                        & i {
-                            margin-left: 5px;
+                        &--prix{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            align-self: flex-end;
+                            font-weight: bold;
+                            margin-left:20px;
+                            margin-right:20px;
+                            width: 35%;
                         }
                     }
-                }    
-            } 
+                    &--rectangle-animation{
+                        background-color: #99E2D0;
+                        max-width: 74px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: -74px;
+                        &--circle{                                
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 100px;
+                            background: #ffffff;
+                            color: #99E2D0;
+                            display: flex;
+                            align-items: center;
+                            align-self: center;
+                            align-content: center;
+                            transition: transform 0.5s;
+                            & i {
+                                margin-left: 5px;
+                            }
+                        }
+                    }    
+                }                    }
+                &__commander{
+                    margin-top:40px;
+                }
+            }    
         }
-        &__commander{
-            margin-top:40px;
-        }
-    }    
-}
