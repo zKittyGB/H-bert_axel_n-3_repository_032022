@@ -1033,28 +1033,8 @@ header i {
     width: 1590px;
   }
 
-  .accueil-fonctionnement__ancre_restaurant {
-    height: 200px;
-    margin-bottom: 0px;
-  }
-  .accueil-fonctionnement__ancre_restaurant h1 {
-    margin-top: 20px;
-  }
-
-  #accueil-fonctionnement__ancre_restaurant--button {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .accueil-fonctionnement__touteslesetapes h1 {
     margin-left: -1350px;
-    margin-bottom: 20px;
-  }
-  .accueil-fonctionnement__touteslesetapes__sansletitre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
   }
   .accueil-fonctionnement__touteslesetapes__etape {
     width: 30%;
@@ -1090,13 +1070,19 @@ header i {
     justify-content: space-between;
   }
 
-  .menu-lacarte__liste--plats--texte--menu h3, p {
-    overflow: visible;
-    text-overflow: visible;
+  .menu-lacarte__liste__global {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu-lacarte__liste {
+    width: 30%;
+    justify-content: space-around;
   }
 
   /* fin Media Querry pour menu_restaurant.html */
 }
-/* fin Media querry pour 1024px */
+/* fin Media querry pour 1600px */
 
 /*# sourceMappingURL=style.css.map */
