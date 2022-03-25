@@ -74,6 +74,10 @@
         justify-content: space-between;
     }
 
+    .menu-lacarte__commander{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
     
     .menu-lacarte__liste--plats--texte--menu h3, p{
         overflow: visible;
@@ -151,10 +155,7 @@
     .menu-lacarte__liste{
         width:30%;
         justify-content: space-around;
-        
-
     }
-
     /* fin Media Querry pour menu_restaurant.html */
 }
 
