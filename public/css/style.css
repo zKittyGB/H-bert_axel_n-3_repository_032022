@@ -322,12 +322,13 @@ footer a {
 .accueil-fonctionnement__touteslesetapes__etape {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   background: #f6f6f6;
   border-radius: 20px 20px 20px 20px;
   height: 70px;
-  width: 85%;
-  margin-bottom: 20px;
+  width: 300px;
+  margin-bottom: 15px;
   box-shadow: 1px 5px 10px #d0d0d0;
 }
 .accueil-fonctionnement__touteslesetapes__etape:hover {
@@ -343,6 +344,9 @@ footer a {
 }
 .accueil-fonctionnement__touteslesetapes__etape h1 {
   width: 90%;
+}
+.accueil-fonctionnement__touteslesetapes__etape h4 {
+  margin-top: 22px;
 }
 
 .accueil__etape--cerclenumetape {
@@ -562,7 +566,7 @@ header i {
   font-weight: 400;
 }
 .menu-lacarte__liste--plats--1 {
-  animation: fadein 2.5s;
+  animation: fadein 3s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -592,7 +596,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--2 {
-  animation: fadein 3s;
+  animation: fadein 4s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -622,7 +626,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--3 {
-  animation: fadein 3.5s;
+  animation: fadein 5s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -652,7 +656,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--4 {
-  animation: fadein 4s;
+  animation: fadein 6s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -682,7 +686,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--5 {
-  animation: fadein 4.5s;
+  animation: fadein 7s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -712,7 +716,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--6 {
-  animation: fadein 5s;
+  animation: fadein 8s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -742,7 +746,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--7 {
-  animation: fadein 5.5s;
+  animation: fadein 9s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -772,7 +776,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--8 {
-  animation: fadein 6s;
+  animation: fadein 10s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -802,7 +806,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--9 {
-  animation: fadein 6.5s;
+  animation: fadein 11s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -832,7 +836,7 @@ header i {
   transform: rotate(360deg);
 }
 .menu-lacarte__liste--plats--10 {
-  animation: fadein 7s;
+  animation: fadein 12s;
   width: 95%;
   height: 70px;
   background-color: #ffffff;
@@ -925,7 +929,174 @@ header i {
   margin-left: 5px;
 }
 .menu-lacarte__commander {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+
+  .main {
+    max-width: 1000px;
+  }
+
+  /* Media Querry pour l'index.html*/
+  .loader {
+    width: 1000px;
+  }
+
+  .accueil-fonctionnement__ancre_restaurant {
+    height: 200px;
+    margin-bottom: 0px;
+  }
+  .accueil-fonctionnement__ancre_restaurant h1 {
+    margin-top: 20px;
+  }
+
+  #accueil-fonctionnement__ancre_restaurant--button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .accueil-fonctionnement__touteslesetapes h1 {
+    margin-left: -775px;
+    margin-bottom: 20px;
+  }
+  .accueil-fonctionnement__touteslesetapes__sansletitre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .accueil-fonctionnement__touteslesetapes__etape {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .accueil-restaurants__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .accueil-restaurants__liste__card {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .accueil-restaurants__liste__card__image--nouveau {
+    left: 340px;
+  }
+
+  /* fin Media Querry pour index.html*/
+  /* début Media Querry pour menu_restaurant.html*/
+  .menu-imagerestaurant img {
+    width: 1000px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .menu-lacarte__titre {
+    width: 890px;
+    margin-left: 60px;
+    justify-content: space-between;
+  }
+
+  .menu-lacarte__liste--plats--texte--menu h3, p {
+    overflow: visible;
+    text-overflow: visible;
+  }
+
+  /* fin Media Querry pour menu_restaurant.html */
+}
+/* fin Media querry pour 1024px */
+@media screen and (min-width: 1600px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1590px;
+  }
+
+  .main {
+    max-width: 1590px;
+  }
+
+  /* Media Querry pour l'index.html*/
+  .loader {
+    width: 1590px;
+  }
+
+  .accueil-fonctionnement__ancre_restaurant {
+    height: 200px;
+    margin-bottom: 0px;
+  }
+  .accueil-fonctionnement__ancre_restaurant h1 {
+    margin-top: 20px;
+  }
+
+  #accueil-fonctionnement__ancre_restaurant--button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .accueil-fonctionnement__touteslesetapes h1 {
+    margin-left: -1350px;
+    margin-bottom: 20px;
+  }
+  .accueil-fonctionnement__touteslesetapes__sansletitre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .accueil-fonctionnement__touteslesetapes__etape {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .accueil-restaurants__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .accueil-restaurants__liste__card {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .accueil-restaurants__liste__card__image--nouveau {
+    left: 220px;
+  }
+
+  /* fin Media Querry pour index.html*/
+  /* début Media Querry pour menu_restaurant.html*/
+  .menu-imagerestaurant img {
+    width: 1590px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .menu-lacarte__titre {
+    width: 1450px;
+    margin-left: 60px;
+    justify-content: space-between;
+  }
+
+  .menu-lacarte__liste--plats--texte--menu h3, p {
+    overflow: visible;
+    text-overflow: visible;
+  }
+
+  /* fin Media Querry pour menu_restaurant.html */
+}
+/* fin Media querry pour 1024px */
 
 /*# sourceMappingURL=style.css.map */
