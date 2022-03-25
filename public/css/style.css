@@ -1083,11 +1083,12 @@ header i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .menu-lacarte__liste {
     width: 30%;
-    justify-content: space-around;
+    align-content: flex-start;
   }
 
   /* fin Media Querry pour menu_restaurant.html */
