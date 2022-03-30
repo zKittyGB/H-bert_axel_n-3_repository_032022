@@ -20,15 +20,15 @@
         border-top: 10px solid $colour-primary;
         border-bottom: 10px solid $colour-secondary;
         border-radius: 100%;
-        width: 370px;
-        height: 370px;
+        width: 350px;
+        height: 350px;
         /* déclenchement de l'animation du load spinner */
         animation: load_spinner 4s linear forwards;
         /* positionnement du spinner au milieu */
         margin: auto;
         position: absolute;
         top: 80;
-        left: 0;
+        left: 05;
         right: 0;
         bottom: 0;
     }
@@ -245,6 +245,13 @@
                 position: relative;
                 top: -165px;
                 left: 260px;
+                &--vide{
+                    width:80px;
+                    height:25px;
+                    position: relative;
+                    top: -165px;
+                    left: 260px;
+                }
                 & p{
                     color:#21997b;
                     font-size: 14px;

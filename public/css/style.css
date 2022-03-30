@@ -155,15 +155,15 @@ footer a {
   border-top: 10px solid #9356DC;
   border-bottom: 10px solid #FF79DA;
   border-radius: 100%;
-  width: 370px;
-  height: 370px;
+  width: 350px;
+  height: 350px;
   /* déclenchement de l'animation du load spinner */
   animation: load_spinner 4s linear forwards;
   /* positionnement du spinner au milieu */
   margin: auto;
   position: absolute;
   top: 80;
-  left: 0;
+  left: 5;
   right: 0;
   bottom: 0;
 }
@@ -433,6 +433,13 @@ footer a {
   top: -165px;
   left: 260px;
 }
+.accueil-restaurants__liste__card__image--nouveau--vide {
+  width: 80px;
+  height: 25px;
+  position: relative;
+  top: -165px;
+  left: 260px;
+}
 .accueil-restaurants__liste__card__image--nouveau p {
   color: #21997b;
   font-size: 14px;
@@ -458,7 +465,7 @@ header i {
   border-radius: 35px 35px 0px 0px;
   width: 100%;
   margin-top: -40px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 .menu-lacarte__titre {
   width: 90%;
@@ -893,7 +900,7 @@ header i {
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
-  width: 260px;
+  width: 290px;
 }
 .menu-lacarte__liste--plats--texte--prix {
   display: flex;
@@ -934,6 +941,7 @@ header i {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
