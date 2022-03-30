@@ -960,6 +960,10 @@ header i {
     width: 1000px;
     height: 100%;
   }
+  .loader__circle {
+    width: 380px;
+    height: 380px;
+  }
 
   .accueil-fonctionnement__ancre_restaurant {
     height: 200px;
